@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--Author: Jeremy Chiaramonte-->
+<!--Copyright: 2015-->
+<html lang="en">
+  <head>
+    <!--SEO-->
+
+    <!--Assets-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <select id="theme">
+      <option value="xcode">XCode</option>
+      <option value="monokai">Monokai</option>
+      <option value="terminal">Terminal</option>
+      <option value="twilight">Twilight</option>
+    </select>
+    <pre id="editor"></pre>
+    <!--Scripts-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/xcode");
+        editor.getSession().setMode("ace/mode/text");
+    </script>
+  </body>
