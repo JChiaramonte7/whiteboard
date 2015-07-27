@@ -22,11 +22,13 @@
       <option value="css">Css</option>
       <option value="javascript">Javascript</option>
     </select>
+    <button onclick="TogetherJS(this); return false;">Collaborate!</button>
     <pre id="editor"></pre>
     <!--Scripts-->
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://togetherjs.com/togetherjs-min.js"></script>
     <script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
     <script>
         var editor = ace.edit("editor");
